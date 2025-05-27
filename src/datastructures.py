@@ -25,7 +25,24 @@ class FamilyStructure:
         self._next_id += 1
         return generated_id
 
-    def add_member(self, member):
+    def add_member(self, member, _generate_id, first_name, last_name, age, lucky_numbers):
+        self._generate_id = _generate_id()
+        self.first_name = first_name
+        self.last_name = last_name,
+        self.age = age,
+        self.lucky_numbers = list(lucky_numbers)
+        self.member = member
+        
+        member = [dict(["id": _generate_id(),
+                "first_name": first_name,
+                "last_name": last_name,
+                "age": age,
+                "lucky_numbers": list(lucky_numbers)])]
+        
+        new_member = [_members.append(member)]
+        
+
+        return new_member 
         ## You have to implement this method
         ## Append the member to the list of _members
         pass
